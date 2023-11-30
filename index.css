@@ -1,0 +1,421 @@
+/* NAV BAR */
+.navbar-custom {
+  width: calc(100% - 30px); /* Adjust the width as needed */
+  border-radius: 15px; /* Adjust the border-radius for the corners */
+  margin: 20px auto 0; /* This creates margin on top and centers the navbar horizontally */
+  max-width: 1200px; /* Set a max-width for the navbar */
+  padding: 10px;
+}
+.navbar-nav .nav-link {
+  font-size: 14px;
+  /* Existing styles */
+}
+
+.navbar-custom .navbar-brand {
+  border-radius: 15px;
+}
+
+/* HEADER */
+.bg-header {
+  background-image: url("../images/background-1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1; /* Ensure the content stays above the background image */
+  padding-top: 20px;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 25%; /* Adjust the positioning of the image */
+  right: 20%; /* Adjust the left position */
+  transform: translateY(-50%);
+  background-image: url("../images/bee1.png");
+  width: 120px; /* Adjust size */
+  height: 120px; /* Adjust size */
+  background-size: contain; /* Adjust the image size */
+}
+
+.bg-header .row-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-wrapper img {
+  max-width: 90%; /* Ensure the image stays within its container */
+}
+
+.header-title {
+  font-family: "Carter One", sans-serif;
+  color: black;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.header-text {
+  font-family: "Lato", sans-serif;
+  color: #2c1f35;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* WORK SHEET CARDS */
+.card-sheet {
+  margin: 85px;
+}
+
+.activity-text1 {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #330656;
+}
+.activity-text2 {
+  font-family: "Londrina Solid", sans-serif;
+  margin: 15px;
+  color: #330656;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.act-card-title {
+  font-family: "Londrina Solid", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.act-card-text {
+  font-family: "Londrina Solid", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.act-card-box {
+  background: #330656;
+  border-radius: 35px;
+  border: 10px solid #76558f;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 90px;
+  height: 90px;
+}
+
+/* Core Values */
+.bg-core {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/background-2.png");
+  background-size: cover;
+  background-position: left;
+  position: relative;
+  height: auto;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.core-card {
+  margin: 20px;
+  max-width: 80%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.core-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4vh;
+  transform: translateY(-50%);
+  background-image: url("../images/bee2.png");
+  width: 10%;
+  padding-top: 10%;
+  background-size: contain;
+  z-index: -1;
+}
+
+.core-title {
+  font-family: "Londrina Solid", sans-serif;
+  color: #330656;
+  font-size: 54px;
+}
+
+.core-text {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn-core {
+  background-color: #ffbb12;
+  color: white;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+/* Articles */
+.article-box {
+  margin: 85px;
+}
+
+.article-title {
+  font-family: "Londrina Solid", sans-serif;
+  color: #330656;
+  font-size: 60px;
+}
+
+.article-card {
+  background-color: #f6ebff;
+  border-radius: 25px;
+}
+
+.article-text {
+  font-family: "Lato", sans-serif;
+}
+
+.btn-3d {
+  background-color: #76558f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+
+  box-shadow: 0px 4px 0px #563f6d; /* Shadow below the button */
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-3d:hover {
+  box-shadow: 0px 2px 0px #563f6d; /* Adjusted shadow on hover */
+  transform: translateY(2px); /* Slight lift on hover */
+  text-decoration: none;
+  color: white;
+}
+
+/* Pricing */
+.pricing {
+  margin: 20px;
+}
+
+.pricing-card {
+  padding: 25px;
+  margin: 10px;
+  background: #f6ebff;
+  border-radius: 24px;
+  border: 8px #76558f solid;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.card-description {
+  text-align: center;
+}
+.card-title {
+  color: #4b2d62;
+  font-size: 36px;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.price {
+  color: #ff8a00;
+  font-size: 38px;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.details {
+  color: #76558f;
+  margin: 10px;
+}
+
+/* Unlock Hours */
+.bg-unlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/background-3.png");
+  background-size: cover;
+  background-position: left;
+  position: relative;
+  height: 50vh;
+  text-align: center;
+}
+
+.unlock-title {
+  margin: 20px;
+  max-width: 80%;
+  position: relative;
+  text-align: center;
+
+  color: #330656;
+  font-size: 54px;
+  font-family: Londrina Solid;
+  font-weight: 900;
+}
+
+.unlock-title::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  transform: translateY(-50%);
+  background-image: url("../images/bee1.png");
+  width: 20%;
+  padding-top: 20%;
+  background-size: contain;
+  z-index: -1;
+}
+
+.btn-unlock-1 {
+  color: #ffbb12;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 13px 40px;
+}
+.btn-unlock-2 {
+  background-color: #ffbb12;
+  color: white;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 5px 30px;
+}
+
+.btn-unlock-2 a {
+  color: white;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.footer-content {
+  position: relative;
+}
+
+.background {
+  height: 350px;
+  background: #020101;
+}
+
+.quick-links,
+.course,
+.our-service,
+.contact-us,
+.kids-fun-learn,
+.description {
+  position: absolute;
+  font-size: 20px;
+  font-family: Mulish;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.quick-links {
+  width: 149px;
+  height: 26.77px;
+  left: calc(50% - 55px); /* Centering the element */
+  top: 93.51px;
+  font-size: 28px;
+  font-family: Ubuntu;
+  font-weight: 500;
+}
+
+.course {
+  width: 65px;
+  height: 20.91px;
+  left: calc(50% - 55px); /* Centering the element */
+  top: 142.84px;
+}
+
+.our-service {
+  width: 108px;
+  height: 20.91px;
+  left: calc(50% - 55px); /* Centering the element */
+  top: 186.64px;
+}
+
+.contact-us {
+  width: 103px;
+  height: 20.91px;
+  left: calc(50% - 55px); /* Centering the element */
+  top: 230.45px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kids-fun-learn {
+  width: 327px;
+  height: 42.66px;
+  left: 50px; /* Adjust position */
+  top: 85.15px;
+  font-size: 40px;
+  font-family: Ubuntu;
+  font-weight: 700;
+}
+
+.description {
+  width: 419px;
+  height: 62.73px;
+  left: 50px;
+  top: 174.65px;
+}
+
+.contact-info {
+  width: 333px;
+  left: 70%; /* Adjust position */
+  top: 52.45px;
+  position: absolute;
+  color: #f39c12;
+  font-size: 16px;
+  font-family: Righteous;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+
+.help,
+.get-in-touch {
+  margin-bottom: 10px;
+}
+
+.get-in-touch .contact-text {
+  margin-bottom: 10px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.subscribe-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
